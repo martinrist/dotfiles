@@ -1,4 +1,12 @@
+[user]
+	name = Martin Rist
+	email = mlr-github@martinrist.com
+
 [alias]
+
+	# Shortcuts for SVN backwards compatibility
+	ci = commit
+	stat = status
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
