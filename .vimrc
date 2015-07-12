@@ -3,7 +3,7 @@ execute pathogen#infect()
 
 " Use the Solarized Dark theme
 set background=dark
-colorscheme solarized
+colorscheme darcula
 let g:solarized_termtrans=1
 
 " Make Vim more useful
