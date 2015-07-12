@@ -2,6 +2,9 @@
 	name = Martin Rist
 	email = mlr-github@martinrist.com
 
+[credential]
+	helper = osxkeychain
+
 [alias]
 
 	# Shortcuts for SVN backwards compatibility
