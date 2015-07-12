@@ -1,3 +1,6 @@
+" Set up pathogen.vim
+execute pathogen#infect()
+
 " Use the Solarized Dark theme
 set background=dark
 colorscheme solarized
