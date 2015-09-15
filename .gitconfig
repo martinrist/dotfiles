@@ -8,7 +8,7 @@
 [alias]
 
 	# Shortcuts for SVN backwards compatibility
-	ci = commit
+	ci = commit -v
 	stat = status
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
