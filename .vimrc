@@ -1,10 +1,32 @@
 " Set up pathogen.vim
 execute pathogen#infect()
 
-" Use the Solarized Dark theme
+" Use Darcula colorscheme
 set background=dark
 colorscheme darcula
-let g:solarized_termtrans=1
+
+" Haskell Configuration
+" TODO: Move into separate file and source from here?
+
+" Haskell - ghc-mod
+map <silent> tw :GhcModTypeInsert<CR>
+map <silent> ts :GhcModSplitFunCase<CR>
+map <silent> tq :GhcModType<CR>
+map <silent> te :GhcModTypeClear<CR>
+
+" Haskell - supertab
+let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
+if has("gui_running")
+  imap <c-space> <c-r>=SuperTabAlternateCompletion("\<lt>c-x>\<lt>c-o>")<cr>
+else " no gui
+  if has("unix")
+    inoremap <Nul> <c-r>=SuperTabAlternateCompletion("\<lt>c-x>\<lt>c-o>")<cr>
+  endif
+endif
+
+" Haskell - neco-ghc
+let g:haskellmode_completion_ghc = 1
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
 " Make Vim more useful
 set nocompatible
@@ -101,7 +123,7 @@ noremap <leader>W :w !sudo tee % > /dev/null<CR>
 " Automatic commands
 if has("autocmd")
 	" Enable file type detection
-	filetype on
+	filetype plugin indent on
 	" Treat .json files as .js
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 	" Treat .md files as Markdown
