@@ -7,8 +7,7 @@
 # - Other Haskell stuff from http://www.stephendiehl.com/posts/vim_2016.html
 
 
-git clone https://github.com/blueshirts/darcula.git
-
+git clone https://github.com/martinrist/darcula.git
 
 # Haskell
 
