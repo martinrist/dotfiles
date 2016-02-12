@@ -18,7 +18,7 @@ git clone https://github.com/Shougo/neocomplete.vim.git
 git clone https://github.com/ervandew/supertab.git
 
 git clone https://github.com/Shougo/vimproc.vim.git
-pushd vimproc.vim.git
+pushd vimproc.vim
 make
 popd
 
