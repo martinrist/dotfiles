@@ -8,6 +8,7 @@
 
 
 git clone https://github.com/martinrist/darcula.git
+git clone https://github.com/altercation/vim-colors-solarized.git
 
 # Haskell
 
