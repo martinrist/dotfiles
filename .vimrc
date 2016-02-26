@@ -5,6 +5,11 @@ execute pathogen#infect()
 set background=dark
 colorscheme darcula
 
+" Custom statusline
+set statusline=%t\ [%{strlen(&fenc)?&fenc:'none'}\,\ %{&ff}]\ %h\ %m\ %r\ %y%=%c,%l/%L\ (%P)
+
+
+
 " Haskell Configuration
 " TODO: Move into separate file and source from here?
 
@@ -44,7 +49,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
-let g:syntastic_loc_list_height = 3
+let g:syntastic_loc_list_height = 5
 
 
 " NERDTree
