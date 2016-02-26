@@ -28,6 +28,7 @@ endif
 let g:haskellmode_completion_ghc = 1
 autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 
+" Fall back to normal completion if omnifunc fails
 autocmd FileType *
       \ if &omnifunc != '' |
       \   call SuperTabChain(&omnifunc, "<c-p>") |
@@ -44,6 +45,18 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height = 3
+
+
+" NERDTree
+
+" Start NERDTree at startup
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" Toggle NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+
 
 
 " Make Vim more useful
