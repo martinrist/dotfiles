@@ -8,6 +8,8 @@
 
 git clone https://github.com/martinrist/darcula.git
 
+git clone https://github.com/scrooloose/nerdtree.git
+
 # General programming
 git clone https://github.com/scrooloose/syntastic.git
 
