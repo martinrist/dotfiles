@@ -1,9 +1,10 @@
-[user]
-	name = Martin Rist
-	email = mlr-github@martinrist.com
+# Machine-specific configuration (e.g. username, credential helper)
+# should go in ~\.extra. e.g.:
+#   git config --global credential.helper osxkeychain
+#   git config --global user.name "Martin Rist"
+#   git config --global user.email "email@example.com"
+#   git config --global core.autocrlf false
 
-[credential]
-	helper = osxkeychain
 
 [alias]
 
