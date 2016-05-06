@@ -26,6 +26,8 @@ alias gds="git diff --staged"
 alias gp="git push"
 alias gpl="git pull"
 
+# Replaces GREP_OPTIONS (now deprecated)
+alias grep="grep --color=auto"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
