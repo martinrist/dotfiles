@@ -1,9 +1,8 @@
 " Set up pathogen.vim
 execute pathogen#infect()
 
-" Use Darcula colorscheme
 set background=dark
-colorscheme darcula
+colorscheme solarized
 
 " Custom statusline
 set statusline=%t\ [%{strlen(&fenc)?&fenc:'none'}\,\ %{&ff}]\ %h\ %m\ %r\ %y%=%c,%l/%L\ (%P)
