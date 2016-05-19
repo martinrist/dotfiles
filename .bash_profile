@@ -48,8 +48,8 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 # Run tmux autocompletion script
-if [ -f ~/.tmux.completion.bash ]; then
-      . ~/.tmux.completion.bash
+if [ -f ~/.tmux-completion.bash ]; then
+      . ~/.tmux-completion.bash
 fi
 
 # Add tab completion for `defaults read|write NSGlobalDomain`
