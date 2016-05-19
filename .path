@@ -1,1 +1,1 @@
-export PATH=$PATH:/opt/apache-maven/bin:/opt/gradle/bin:/opt/postgres/bin:/opt/maven/bin:~/Library/Haskell/bin
+export PATH=/opt/firefox:$PATH:/opt/apache-maven/bin:/opt/gradle/bin:/opt/postgres/bin:/opt/maven/bin:~/Library/Haskell/bin
