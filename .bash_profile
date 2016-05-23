@@ -42,6 +42,9 @@ fi;
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
+# Bash auto-completion scripts
+# TODO: Move these into a directory like bash_complation.d and just iterate through all the contents
+
 # Run Git autocompletion script
 if [ -f ~/.git-completion.bash ]; then
       . ~/.git-completion.bash
@@ -50,6 +53,11 @@ fi
 # Run tmux autocompletion script
 if [ -f ~/.tmux-completion.bash ]; then
       . ~/.tmux-completion.bash
+fi
+
+# Run mvn autocompletion script
+if [ -f ~/.mvn-completion.bash ]; then
+      . ~/.mvn-completion.bash
 fi
 
 # Add tab completion for `defaults read|write NSGlobalDomain`
