@@ -26,6 +26,9 @@ alias gds="git diff --staged"
 alias gp="git push"
 alias gpl="git pull"
 
+# Clipboard support for linux
+alias xclip="xclip --sel clip"
+
 # Replaces GREP_OPTIONS (now deprecated)
 alias grep="grep --color=auto"
 
