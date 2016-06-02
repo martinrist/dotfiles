@@ -43,25 +43,10 @@ fi;
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2- | tr ' ' '\n')" scp sftp ssh;
 
 # Bash auto-completion scripts
-# TODO: Move these into a directory like bash_complation.d and just iterate through all the contents
-
-# Run Git autocompletion script
-if [ -f ~/.git-completion.bash ]; then
-      . ~/.git-completion.bash
-fi
-
-# Run tmux and tmuxinator autocompletion scripts
-if [ -f ~/.tmux-completion.bash ]; then
-      . ~/.tmux-completion.bash
-fi
-
-if [ -f ~/.tmuxinator-completion.bash ]; then
-      . ~/.tmuxinator-completion.bash
-fi
-
-# Run mvn autocompletion script
-if [ -f ~/.mvn-completion.bash ]; then
-      . ~/.mvn-completion.bash
+if [ -d ~/.completion.d ]; then
+    for file in $(ls ~/.completion.d/*); do
+        . $file
+    done
 fi
 
 # Add tab completion for `defaults read|write NSGlobalDomain`
