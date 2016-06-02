@@ -50,9 +50,13 @@ if [ -f ~/.git-completion.bash ]; then
       . ~/.git-completion.bash
 fi
 
-# Run tmux autocompletion script
+# Run tmux and tmuxinator autocompletion scripts
 if [ -f ~/.tmux-completion.bash ]; then
       . ~/.tmux-completion.bash
+fi
+
+if [ -f ~/.tmuxinator-completion.bash ]; then
+      . ~/.tmuxinator-completion.bash
 fi
 
 # Run mvn autocompletion script
