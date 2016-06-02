@@ -44,8 +44,8 @@ fi;
 
 # Bash auto-completion scripts
 if [ -d ~/.completion.d ]; then
-    for file in $(ls ~/.completion.d/*); do
-        . $file
+    for f in ~/.completion.d/*; do
+        . $f
     done
 fi
 
