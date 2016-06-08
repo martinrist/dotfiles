@@ -41,8 +41,11 @@ set convert-meta off
 
 # Use vi editing mode
 set editing-mode vi
-
 $if mode=vi
+    set keymap vi-command
+    ".":insert-last-argument
+
+    set keymap vi-insert
     "\C-l": clear-screen
     "\C-k": kill-line
 $endif
