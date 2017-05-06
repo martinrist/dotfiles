@@ -1,10 +1,6 @@
 #!/bin/bash
 
 # Script to clone and install Vim bundles
-# TODO:
-# - Nerdtree?
-# - Other Haskell stuff from http://www.stephendiehl.com/posts/vim_2016.html
-
 
 git clone https://github.com/martinrist/darcula.git
 git clone https://github.com/altercation/vim-colors-solarized.git
@@ -15,6 +11,7 @@ git clone https://github.com/scrooloose/nerdcommenter.git
 
 # General programming
 git clone https://github.com/scrooloose/syntastic.git
+git clone https://github.com/airblade/vim-gitgutter.git
 
 # Haskell
 
