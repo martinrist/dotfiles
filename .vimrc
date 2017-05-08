@@ -50,6 +50,9 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_loc_list_height = 5
 
+" Haskell - hindent
+let g:hindent_indent_size = 4
+let g:hindent_line_length = 80
 
 " NERDTree
 
