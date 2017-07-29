@@ -1,0 +1,4 @@
+editMode: Vi
+
+keyseq: xterm-256color "\ESC[1~" home
+keyseq: xterm-256color "\ESC[4~" end
