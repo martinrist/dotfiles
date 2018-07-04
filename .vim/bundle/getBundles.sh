@@ -10,6 +10,7 @@ git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/airblade/vim-gitgutter.git
 git clone https://github.com/tpope/vim-commentary.git
+git clone https://github.com/majutsushi/tagbar.git
 
 # Haskell
 git clone https://github.com/eagletmt/neco-ghc
@@ -19,6 +20,7 @@ git clone https://github.com/ervandew/supertab.git
 git clone https://github.com/bitc/vim-hdevtools.git
 git clone https://github.com/alx741/vim-hindent.git
 git clone https://github.com/nbouscal/vim-stylish-haskell.git
+git clone https://github.com/Twinside/vim-hoogle.git
 git clone https://github.com/Shougo/vimproc.vim.git
 pushd vimproc.vim
 make
