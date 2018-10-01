@@ -195,3 +195,6 @@
 
 [user]
     name = "Martin Rist"
+
+[remote "origin"]
+    prune = true
