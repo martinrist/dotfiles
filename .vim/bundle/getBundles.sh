@@ -16,5 +16,4 @@ git clone https://github.com/majutsushi/tagbar.git
 git clone https://github.com/ervandew/supertab.git
 git clone https://github.com/bitc/vim-hdevtools.git
 git clone https://github.com/alx741/vim-hindent.git
-git clone https://github.com/nbouscal/vim-stylish-haskell.git
 git clone https://github.com/Twinside/vim-hoogle.git
