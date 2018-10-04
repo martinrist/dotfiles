@@ -8,7 +8,7 @@ windows:
         layout: 11c0,238x59,0,0{155x59,0,0,38,82x59,156,0[82x29,156,0,41,82x29,156,30,42]}
         panes:
             - vim .
-            - ghcid -c="stack ghci test/Spec.hs" -T=main
+            - stack test --fast --file-watch
             - stack ghci haskell-sandbox:lib
     - scratch:
         layout: main-vertical
