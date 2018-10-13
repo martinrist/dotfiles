@@ -50,34 +50,15 @@ let g:tagbar_type_haskell = {
 \ }
 
 
+" supertab
+let g:SuperTabDefaultCompletionType = '<c-n>'
 
-" Haskell - ghc-mod
-map <silent> tw :GhcModTypeInsert<CR>
-map <silent> ts :GhcModSplitFunCase<CR>
-map <silent> tq :GhcModType<CR>
-map <silent> te :GhcModTypeClear<CR>
-
-" Haskell - supertab
-let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
-if has("gui_running")
-  imap <c-space> <c-r>=SuperTabAlternateCompletion("\<lt>c-x>\<lt>c-o>")<cr>
-else " no gui
-  if has("unix")
-    inoremap <Nul> <c-r>=SuperTabAlternateCompletion("\<lt>c-x>\<lt>c-o>")<cr>
-  endif
+if has("autocmd") && exists("+omnifunc")
+    autocmd Filetype *
+        \ if &omnifunc == "" |
+        \ setlocal omnifunc=syntaxcomplete#Complete |
+        \ endif
 endif
-
-" Haskell - neco-ghc
-let g:haskellmode_completion_ghc = 1
-let g:necoghc_enable_detailed_browse = 1
-autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
-
-" Fall back to normal completion if omnifunc fails
-autocmd FileType *
-      \ if &omnifunc != '' |
-      \   call SuperTabChain(&omnifunc, "<c-p>") |
-      \ endif
-
 
 " Haskell - syntastic
 set statusline+=%#warningmsg#
