@@ -7,7 +7,22 @@ colorscheme solarized
 " Custom statusline
 set statusline=%t\ [%{strlen(&fenc)?&fenc:'none'}\,\ %{&ff}]\ %h\ %m\ %r\ %y%=%c,%l/%L\ (%P)
 
-
+" Set up fzf
+set rtp+=/usr/local/opt/fzf
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
 
 " Haskell Configuration
 " TODO: Move into separate file and source from here?
