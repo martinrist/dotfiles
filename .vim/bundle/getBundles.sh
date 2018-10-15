@@ -5,6 +5,7 @@
 # General Vim
 git clone https://github.com/altercation/vim-colors-solarized.git
 git clone https://github.com/scrooloose/nerdtree.git
+git clone https://github.com/junegunn/fzf.vim.git
 
 # General programming
 git clone https://github.com/scrooloose/syntastic.git
