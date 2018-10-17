@@ -24,8 +24,23 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
+" Language Client mappings
+let mapleader=","
+nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+map <Leader>lk :call LanguageClient#textDocument_hover()<CR>
+map <Leader>lg :call LanguageClient#textDocument_definition()<CR>
+map <Leader>lr :call LanguageClient#textDocument_rename()<CR>
+map <Leader>lf :call LanguageClient#textDocument_formatting()<CR>
+map <Leader>lb :call LanguageClient#textDocument_references()<CR>
+map <Leader>la :call LanguageClient#textDocument_codeAction()<CR>
+map <Leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
+
+
 " Haskell Configuration
 " TODO: Move into separate file and source from here?
+
+" Specify language server for Haskell
+let g:LanguageClient_serverCommands = { 'haskell': ['hie-wrapper'] }
 
 
 " TagBar configuration for hasktags
@@ -66,7 +81,7 @@ let g:tagbar_type_haskell = {
 
 
 " supertab
-let g:SuperTabDefaultCompletionType = '<c-n>'
+let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
 
 if has("autocmd") && exists("+omnifunc")
     autocmd Filetype *
@@ -74,21 +89,6 @@ if has("autocmd") && exists("+omnifunc")
         \ setlocal omnifunc=syntaxcomplete#Complete |
         \ endif
 endif
-
-" Haskell - syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_loc_list_height = 5
-
-" Haskell - hindent
-let g:hindent_indent_size = 4
-let g:hindent_line_length = 80
 
 " NERDTree
 
@@ -101,9 +101,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Toggle NERDTree
 map <C-n> :NERDTreeToggle<CR>
-
-
-
 
 " Make Vim more useful
 set nocompatible
@@ -121,8 +118,6 @@ set ttyfast
 set gdefault
 " Use UTF-8 without BOM
 set encoding=utf-8 nobomb
-" Change mapleader
-let mapleader=","
 " Don’t add empty newlines at the end of files
 set binary
 set noeol
