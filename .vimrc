@@ -20,6 +20,7 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
+nnoremap <C-p> :<C-u>FZF<CR>
 
 " Language Client mappings
 let mapleader=","
