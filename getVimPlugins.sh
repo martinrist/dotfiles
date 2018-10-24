@@ -11,6 +11,7 @@ git clone https://github.com/tpope/vim-unimpaired.git
 git clone https://github.com/altercation/vim-colors-solarized.git
 git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/junegunn/fzf.vim.git
+git clone https://github.com/itchyny/lightline.vim.git
 
 # General programming
 git clone https://github.com/scrooloose/syntastic.git

@@ -2,7 +2,9 @@ set background=dark
 colorscheme solarized
 
 " Custom statusline
-set statusline=%t\ [%{strlen(&fenc)?&fenc:'none'}\,\ %{&ff}]\ %h\ %m\ %r\ %y%=%c,%l/%L\ (%P)
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+      \ }
 
 " Set up fzf
 set rtp+=/usr/local/opt/fzf
