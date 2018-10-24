@@ -27,6 +27,7 @@ alias gds="git diff --staged"
 alias gp="git push"
 alias gpl="git pull"
 alias gb="git branches"
+alias gbd="git branch -vv | grep '\[gone\]' | cut -d ' ' -f 3 | xargs git branch -D"
 
 # Clipboard support for linux
 alias xclip="xclip -sel clip"
