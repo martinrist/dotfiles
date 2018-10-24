@@ -4,6 +4,16 @@ name: mowa
 root: ~/doc/devel/mowa
 
 windows:
+    - scratch:
+        layout: main-vertical
+        panes:
+            - #empty
+    - git:
+        layout: main-horizontal
+        root: ~/doc/devel/mowa
+        panes:
+            - cd ios
+            - cd tests
     - run-tests:
         layout: main-vertical
         root: ~/doc/devel/mowa/met-office-weather-app-ui-tests
@@ -14,19 +24,10 @@ windows:
         root: ~/doc/devel/mowa/met-office-weather-app-ui-tests/features
         panes:
             - vim
-    - git:
-        layout: main-horizontal
-        root: ~/doc/devel/mowa
-        panes:
-            - cd ios
-            - cd tests
     - backend:
         root: ~/doc/devel/mowa/met-office-weather-app-ui-tests
         panes:
             - ./run_scripts/backend_run
-    - scratch:
-        panes:
-            - #empty
     - training:
         root: ~/doc/devel/ios-apprentice
         layout: main-vertical
