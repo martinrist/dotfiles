@@ -8,6 +8,8 @@
 
 [alias]
 
+    fza = "!git ls-files -m -o --exclude-standard | fzf --height 40% --reverse --print0 -m | xargs -0 -t -o git add"
+
 	# Shortcuts for SVN backwards compatibility
 	ci = commit -v
 	stat = status
