@@ -1,4 +1,4 @@
 export PATH=/opt/firefox:$PATH:/opt/apache-maven/bin:/opt/gradle/bin:/opt/postgres/bin:/opt/maven/bin:~/.local/bin
 
 # Put GHC on path for hdevtools
-export PATH=$PATH:$(stack path --compiler-bin)
+# export PATH=$PATH:$(stack path --compiler-bin)
