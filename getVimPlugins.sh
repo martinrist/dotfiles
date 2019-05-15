@@ -13,6 +13,10 @@ git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/junegunn/fzf.vim.git
 git clone https://github.com/itchyny/lightline.vim.git
 
+# Wiki
+# Use `dev` branch until https://github.com/vimwiki/vimwiki/pull/529 merged to `master`
+git clone -b dev https://github.com/vimwiki/vimwiki.git
+
 # General programming
 git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/airblade/vim-gitgutter.git

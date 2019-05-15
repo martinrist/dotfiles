@@ -1,6 +1,12 @@
 set background=dark
 colorscheme solarized
 
+" Vimwiki
+
+let g:vimwiki_list = [{'path': '~/doc/knowledgebase/',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_markdown_link_ext = 1
+
 " Custom statusline
 let g:lightline = {
       \ 'colorscheme': 'solarized',
