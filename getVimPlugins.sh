@@ -30,4 +30,9 @@ pushd LanguageClient-neovim
 ./install.sh
 popd
 
+# Swift
+git clone https://github.com/apple/swift/ apple-swift
+cp -r ./apple-swift/utils/vim ~/.vim/pack/bundle/start/swift
+rm -rf ./apple-swift/
+
 popd
