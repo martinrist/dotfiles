@@ -4,33 +4,32 @@ name: mowa
 root: ~/doc/devel/mowa
 
 windows:
-    - scratch:
-        layout: main-vertical
+    - knowledgebase:
+        layout: main-horizontal
+        root: ~/doc/knowledgebase
         panes:
+            - vim Home.md
+            - grip -b
             - #empty
-    - git:
+    - mowa-src:
         layout: main-horizontal
         root: ~/doc/devel/mowa
         panes:
             - cd ios
             - cd tests
-    - run-tests:
+    - mowa-tests:
         layout: main-vertical
         root: ~/doc/devel/mowa/met-office-weather-app-ui-tests
         panes:
             - #empty
             - calabash-ios console
-    - test-source:
-        root: ~/doc/devel/mowa/met-office-weather-app-ui-tests/features
-        panes:
-            - vim
-    - backend:
+    - mowa-backend:
         root: ~/doc/devel/mowa/met-office-weather-app-ui-tests
         panes:
             - ./run_scripts/backend_run
-    - training:
-        root: ~/doc/devel/ios-apprentice
+    - projects:
+        root: ~/oneDrive/projects/mowa
+    - scratch:
         layout: main-vertical
         panes:
-            - #empty
             - #empty
