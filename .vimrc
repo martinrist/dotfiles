@@ -1,5 +1,6 @@
 set background=dark
 colorscheme solarized
+set updatetime=100
 
 " Vimwiki
 
