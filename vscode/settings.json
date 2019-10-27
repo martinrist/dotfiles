@@ -6,5 +6,7 @@
     "editor.fontSize": 14,
     "files.autoSave": "afterDelay",
     "terminal.integrated.fontSize": 14,
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
+    "workbench.activityBar.visible": true,
+    "editor.quickSuggestionsDelay": 500
 }
