@@ -20,9 +20,10 @@ do
 done
 
 echo
-echo "Copying settings file..."
+echo "Copying settings & keybindings file..."
 echo
 
 source vscode_config.source
 cp settings.json "$VSCODE_SUPPORT_DIR/User"
+cp keybindings.json "$VSCODE_SUPPORT_DIR/User"
 echo "Setup complete"
