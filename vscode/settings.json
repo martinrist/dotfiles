@@ -9,5 +9,7 @@
     "telemetry.enableTelemetry": false,
     "workbench.activityBar.visible": true,
     "editor.quickSuggestionsDelay": 500,
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.rulers": [80, 120]
 }
