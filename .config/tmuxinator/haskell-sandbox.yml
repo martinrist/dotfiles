@@ -5,10 +5,9 @@ root: ~/doc/devel/haskell-sandbox
 
 windows:
     - dev:
-        layout: 11c0,238x59,0,0{155x59,0,0,38,82x59,156,0[82x29,156,0,41,82x29,156,30,42]}
+        layout: even-horizontal
         panes:
-            - vim .
-            - stack test --fast --file-watch
+            - ghcid
             - stack ghci haskell-sandbox:lib
     - scratch:
         layout: main-vertical
