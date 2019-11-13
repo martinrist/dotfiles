@@ -10,6 +10,16 @@
     "workbench.activityBar.visible": true,
     "editor.quickSuggestionsDelay": 500,
     "files.trimTrailingWhitespace": true,
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.rulers": [80, 120]
+    "editor.rulers": [80, 120],
+    "cucumberautocomplete.steps": [
+        "features/step_definitions/*.rb",
+        "features/ios/step_definitions/*.rb",
+        "features/android/step_definitions/*.rb"
+    ],
+    "cucumberautocomplete.syncfeatures": "test/features/*feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "ruby.codeCompletion": "rcodetools",
+    "ruby.intellisense": "rubyLocate",
+    "editor.minimap.scale": 2,
+    "editor.minimap.showSlider": "always"
 }
