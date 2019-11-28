@@ -11,6 +11,8 @@ function doIt() {
         --exclude "README.md" \
         --exclude "getVimPlugins.sh" \
         --exclude "brew.sh" \
+        --exclude "xcode" \
+        --exclude "vscode" \
         --exclude "LICENSE-MIT.txt" \
         -avh --no-perms . ~;
     source ~/.bash_profile;
