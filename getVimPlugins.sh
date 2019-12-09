@@ -19,17 +19,18 @@ git clone https://github.com/itchyny/lightline.vim.git
 git clone -b dev https://github.com/vimwiki/vimwiki.git
 
 # General programming
-git clone https://github.com/scrooloose/syntastic.git
+#git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/airblade/vim-gitgutter.git
 git clone https://github.com/tpope/vim-fugitive.git
 git clone https://github.com/tpope/vim-commentary.git
 git clone https://github.com/majutsushi/tagbar.git
-git clone https://github.com/ervandew/supertab.git
+#git clone https://github.com/ervandew/supertab.git
+git clone https://github.com/dense-analysis/ale.git
 
-git clone https://github.com/autozimu/LanguageClient-neovim.git
-pushd LanguageClient-neovim
-./install.sh
-popd
+#git clone https://github.com/autozimu/LanguageClient-neovim.git
+#pushd LanguageClient-neovim
+#./install.sh
+#popd
 
 # Swift
 git clone https://github.com/apple/swift/ apple-swift

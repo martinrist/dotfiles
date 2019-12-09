@@ -37,22 +37,30 @@ let g:fzf_colors =
 nnoremap <C-p> :<C-u>FZF<CR>
 
 " Language Client mappings
-let mapleader=","
-nnoremap <F5> :call LanguageClient_contextMenu()<CR>
-map <Leader>lh :call LanguageClient#textDocument_hover()<CR>
-map <Leader>ld :call LanguageClient#textDocument_definition()<CR>
-map <Leader>lr :call LanguageClient#textDocument_rename()<CR>
-map <Leader>lf :call LanguageClient#textDocument_formatting()<CR>
-map <Leader>lrr :call LanguageClient#textDocument_references()<CR>
-map <Leader>lc :call LanguageClient#textDocument_codeAction()<CR>
-map <Leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
+" let mapleader=","
+" nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+" #map <Leader>lh :call LanguageClient#textDocument_hover()<CR>
+" map <Leader>ld :call LanguageClient#textDocument_definition()<CR>
+" map <Leader>lr :call LanguageClient#textDocument_rename()<CR>
+" map <Leader>lf :call LanguageClient#textDocument_formatting()<CR>
+" map <Leader>lrr :call LanguageClient#textDocument_references()<CR>
+" map <Leader>lc :call LanguageClient#textDocument_codeAction()<CR>
+" map <Leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
 
 
 " Haskell Configuration
 " TODO: Move into separate file and source from here?
 
+" ALE
+let g:ale_completion_enabled = 1
+set omnifunc=ale#completion#OmniFunc
+let g:ale_linters =
+    \ {
+    \    'haskell': ['hie']
+    \ }
+
 " Specify language server for Haskell
-let g:LanguageClient_serverCommands = { 'haskell': ['hie-wrapper'] }
+" let g:LanguageClient_serverCommands = { 'haskell': ['hie-wrapper'] }
 
 
 " TagBar configuration for hasktags
@@ -93,14 +101,15 @@ let g:tagbar_type_haskell = {
 
 
 " supertab
-let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
+" let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
 
-if has("autocmd") && exists("+omnifunc")
-    autocmd Filetype *
-        \ if &omnifunc == "" |
-        \ setlocal omnifunc=syntaxcomplete#Complete |
-        \ endif
-endif
+" if has("autocmd") && exists("+omnifunc")
+"     autocmd Filetype *
+"         \ if &omnifunc == "" |
+"         \ setlocal omnifunc=syntaxcomplete#Complete |
+"         \ endif
+" endif
+
 
 " NERDTree
 
