@@ -1,5 +1,5 @@
 set background=dark
-colorscheme solarized
+colorscheme darcula
 set updatetime=100
 
 " Vimwiki
@@ -15,7 +15,7 @@ au FileType vimwiki inoremap <silent> <buffer> <expr> <S-CR> pumvisible() ? "\<S
 
 " Custom statusline
 let g:lightline = {
-      \ 'colorscheme': 'solarized',
+      \ 'colorscheme': 'darcula',
       \ }
 
 " Set up fzf
