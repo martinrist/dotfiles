@@ -54,10 +54,8 @@ nnoremap <C-p> :<C-u>FZF<CR>
 " ALE
 let g:ale_completion_enabled = 1
 set omnifunc=ale#completion#OmniFunc
-let g:ale_linters =
-    \ {
-    \    'haskell': ['hie']
-    \ }
+let g:ale_linters = { 'haskell': ['hie'] }
+let g:ale_fixers  = { 'haskell': ['hlint'] }
 
 " Specify language server for Haskell
 " let g:LanguageClient_serverCommands = { 'haskell': ['hie-wrapper'] }
