@@ -2,6 +2,13 @@ set background=dark
 colorscheme solarized
 set updatetime=100
 
+" Syntax Help
+
+function! SynGroup()
+    let l:s = synID(line('.'), col('.'), 1)
+    echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
+endfun
+
 " Vimwiki
 
 let g:vimwiki_list = [{'path': '~/doc/knowledgebase/',
@@ -38,14 +45,17 @@ nnoremap <C-p> :<C-u>FZF<CR>
 
 " Language Client mappings
 let mapleader=","
-nnoremap <F5> :call LanguageClient_contextMenu()<CR>
-map <Leader>lh :call LanguageClient#textDocument_hover()<CR>
-map <Leader>ld :call LanguageClient#textDocument_definition()<CR>
-map <Leader>lr :call LanguageClient#textDocument_rename()<CR>
-map <Leader>lf :call LanguageClient#textDocument_formatting()<CR>
-map <Leader>lrr :call LanguageClient#textDocument_references()<CR>
-map <Leader>lc :call LanguageClient#textDocument_codeAction()<CR>
-map <Leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
+nnoremap <leader>ld :call LanguageClient#textDocument_definition()<CR>
+nnoremap <leader>lr :call LanguageClient#textDocument_rename()<CR>
+nnoremap <leader>lf :call LanguageClient#textDocument_formatting()<CR>
+nnoremap <leader>lt :call LanguageClient#textDocument_typeDefinition()<CR>
+nnoremap <leader>lx :call LanguageClient#textDocument_references()<CR>
+nnoremap <leader>la :call LanguageClient_workspace_applyEdit()<CR>
+nnoremap <leader>lc :call LanguageClient#textDocument_completion()<CR>
+nnoremap <leader>lh :call LanguageClient#textDocument_hover()<CR>
+nnoremap <leader>ls :call LanguageClient_textDocument_documentSymbol()<CR>
+nnoremap <leader>lca :call LanguageClient_textDocument_codeAction()<CR>
+nnoremap <leader>lm :call LanguageClient_contextMenu()<CR>
 
 
 " Haskell Configuration
