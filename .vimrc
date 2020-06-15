@@ -2,127 +2,7 @@ set background=dark
 colorscheme solarized
 set updatetime=100
 
-" Syntax Help
-
-function! SynGroup()
-    let l:s = synID(line('.'), col('.'), 1)
-    echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
-endfun
-
-" Vimwiki
-
-let g:vimwiki_list = [{'path': '~/doc/knowledgebase/',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
-let g:vimwiki_markdown_link_ext = 1
-" Prevent remapping <CR> so i can interact with an open OmniCompletion popup:
-" SOURCE: https://github.com/vimwiki/vimwiki/blob/master/doc/vimwiki.txt#L1491
-" SOURCE: https://github.com/vimwiki/vimwiki/issues/283
-au FileType vimwiki inoremap <silent> <buffer> <expr> <CR>   pumvisible() ? "\<CR>"   : "<Esc>:VimwikiReturn 1 5<CR>"
-au FileType vimwiki inoremap <silent> <buffer> <expr> <S-CR> pumvisible() ? "\<S-CR>" : "<Esc>:VimwikiReturn 2 2<CR>"
-
-" Custom statusline
-let g:lightline = {
-      \ 'colorscheme': 'solarized',
-      \ }
-
-" Set up fzf
-set rtp+=/usr/local/opt/fzf
-let g:fzf_colors =
-\ { 'fg':      ['fg', 'Normal'],
-  \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':     ['fg', 'Statement'],
-  \ 'info':    ['fg', 'PreProc'],
-  \ 'border':  ['fg', 'Ignore'],
-  \ 'prompt':  ['fg', 'Conditional'],
-  \ 'pointer': ['fg', 'Exception'],
-  \ 'marker':  ['fg', 'Keyword'],
-  \ 'spinner': ['fg', 'Label'],
-  \ 'header':  ['fg', 'Comment'] }
-nnoremap <C-p> :<C-u>FZF<CR>
-
-" Language Client mappings
 let mapleader=","
-nnoremap <leader>ld :call LanguageClient#textDocument_definition()<CR>
-nnoremap <leader>lr :call LanguageClient#textDocument_rename()<CR>
-nnoremap <leader>lf :call LanguageClient#textDocument_formatting()<CR>
-nnoremap <leader>lt :call LanguageClient#textDocument_typeDefinition()<CR>
-nnoremap <leader>lx :call LanguageClient#textDocument_references()<CR>
-nnoremap <leader>la :call LanguageClient_workspace_applyEdit()<CR>
-nnoremap <leader>lc :call LanguageClient#textDocument_completion()<CR>
-nnoremap <leader>lh :call LanguageClient#textDocument_hover()<CR>
-nnoremap <leader>ls :call LanguageClient_textDocument_documentSymbol()<CR>
-nnoremap <leader>lca :call LanguageClient_textDocument_codeAction()<CR>
-nnoremap <leader>lm :call LanguageClient_contextMenu()<CR>
-
-
-" Haskell Configuration
-" TODO: Move into separate file and source from here?
-
-" Specify language server for Haskell
-let g:LanguageClient_serverCommands = { 'haskell': ['hie-wrapper'] }
-
-
-" TagBar configuration for hasktags
-let g:tagbar_type_haskell = {
-    \ 'ctagsbin'  : 'hasktags',
-    \ 'ctagsargs' : '-x -c -o-',
-    \ 'kinds'     : [
-        \  'm:modules:0:1',
-        \  'd:data: 0:1',
-        \  'd_gadt: data gadt:0:1',
-        \  't:type names:0:1',
-        \  'nt:new types:0:1',
-        \  'c:classes:0:1',
-        \  'cons:constructors:1:1',
-        \  'c_gadt:constructor gadt:1:1',
-        \  'c_a:constructor accessors:1:1',
-        \  'ft:function types:1:1',
-        \  'fi:function implementations:0:1',
-        \  'o:others:0:1',
-        \  'i:instances'
-    \ ],
-    \ 'sro'        : '.',
-    \ 'kind2scope' : {
-        \ 'm' : 'module',
-        \ 'c' : 'class',
-        \ 'd' : 'data',
-        \ 't' : 'type',
-        \ 'i' : 'instance'
-    \ },
-    \ 'scope2kind' : {
-        \ 'module'   : 'm',
-        \ 'class'    : 'c',
-        \ 'data'     : 'd',
-        \ 'type'     : 't',
-        \ 'instance' : 'i'
-    \ }
-\ }
-
-
-" supertab
-let g:SuperTabDefaultCompletionType = '<c-x><c-o>'
-
-if has("autocmd") && exists("+omnifunc")
-    autocmd Filetype *
-        \ if &omnifunc == "" |
-        \ setlocal omnifunc=syntaxcomplete#Complete |
-        \ endif
-endif
-
-" NERDTree
-
-" Start NERDTree at startup
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
-" Close vim if the only window left open is NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-" Toggle NERDTree
-map <C-n> :NERDTreeToggle<CR>
 
 " Make Vim more useful
 set nocompatible
@@ -233,9 +113,23 @@ endif
 " Autoindent, so gqap works correctly for bulleted lists
 set autoindent
 
-
 " Set indent for YAML files
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " Look for tags files in parent folders
 set tags=./tags;
+
+" Syntax Help
+" To find out which syntax group is used by a selection
+function! SynGroup()
+    let l:s = synID(line('.'), col('.'), 1)
+    echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
+endfun
+
+
+" Plugin-specific configuration
+
+source ~/.vimrc.fzf
+source ~/.vimrc.lightline
+source ~/.vimrc.nerdtree
+source ~/.vimrc.coc
