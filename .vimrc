@@ -1,3 +1,21 @@
+" Default settings that can be removed
+" Allow cursor keys in insert mode
+set esckeys
+
+" Optimize for fast terminal connections
+set ttyfast
+
+" Disable error bells
+set noerrorbells
+
+" Show the current mode
+set showmode
+
+" Start scrolling three lines before the horizontal window border
+set scrolloff=3
+
+
+" Explicit settings start here
 set background=dark
 colorscheme solarized
 set updatetime=100
@@ -10,12 +28,8 @@ set nocompatible
 set clipboard=unnamed
 " Enhance command-line completion
 set wildmenu
-" Allow cursor keys in insert mode
-set esckeys
 " Allow backspace in insert mode
 set backspace=indent,eol,start
-" Optimize for fast terminal connections
-set ttyfast
 " Add the g flag to search/replace by default
 set gdefault
 " Use UTF-8 without BOM
@@ -64,16 +78,12 @@ set incsearch
 set laststatus=2
 " Enable mouse in all modes
 set mouse=a
-" Disable error bells
-set noerrorbells
 " Don’t reset cursor to start of line when moving around.
 set nostartofline
 " Show the cursor position
 set ruler
 " Don’t show the intro message when starting Vim
 set shortmess=atI
-" Show the current mode
-set showmode
 " Show the filename in the window titlebar
 set title
 " Show the (partial) command as it’s being typed
