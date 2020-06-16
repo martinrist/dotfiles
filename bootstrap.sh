@@ -9,6 +9,7 @@ function doIt() {
         --exclude ".DS_Store" \
         --exclude "bootstrap.sh" \
         --exclude "README.md" \
+        --exclude "TODO.md" \
         --exclude "getVimPlugins.sh" \
         --exclude "brew.sh" \
         --exclude "xcode" \
