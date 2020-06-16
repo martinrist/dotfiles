@@ -107,22 +107,19 @@ noremap <leader>ss :call StripWhitespace()<CR>
 noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
 " Automatic commands
-if has("autocmd")
-    " Enable file type detection
-    filetype plugin indent on
-    " Treat .json files as .js
-    autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-    " Treat .md files as Markdown
-    autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
-    " Set Markdown text width
-    autocmd BufNewFile,BufRead *.md setlocal textwidth=80
-endif
+" Enable file type detection
+filetype plugin indent on
+" Treat .json files as .js
+autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+" Treat .md files as Markdown
+autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+" Set Markdown text width
+autocmd BufNewFile,BufRead *.md setlocal textwidth=80
+" Set indent for YAML files
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " Autoindent, so gqap works correctly for bulleted lists
 set autoindent
-
-" Set indent for YAML files
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " Look for tags files in parent folders
 set tags=./tags;
