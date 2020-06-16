@@ -95,11 +95,11 @@ set showcmd
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace()
-	let save_cursor = getpos(".")
-	let old_query = getreg('/')
-	:%s/\s\+$//e
-	call setpos('.', save_cursor)
-	call setreg('/', old_query)
+    let save_cursor = getpos(".")
+    let old_query = getreg('/')
+    :%s/\s\+$//e
+    call setpos('.', save_cursor)
+    call setreg('/', old_query)
 endfunction
 noremap <leader>ss :call StripWhitespace()<CR>
 
@@ -108,14 +108,14 @@ noremap <leader>W :w !sudo tee % > /dev/null<CR>
 
 " Automatic commands
 if has("autocmd")
-	" Enable file type detection
-	filetype plugin indent on
-	" Treat .json files as .js
-	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-	" Treat .md files as Markdown
-	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
-	" Set Markdown text width
-	autocmd BufNewFile,BufRead *.md setlocal textwidth=80
+    " Enable file type detection
+    filetype plugin indent on
+    " Treat .json files as .js
+    autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+    " Treat .md files as Markdown
+    autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+    " Set Markdown text width
+    autocmd BufNewFile,BufRead *.md setlocal textwidth=80
 endif
 
 " Autoindent, so gqap works correctly for bulleted lists
