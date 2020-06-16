@@ -129,7 +129,7 @@ endfun
 
 " Plugin-specific configuration
 
-source ~/.vimrc.fzf
-source ~/.vimrc.lightline
-source ~/.vimrc.nerdtree
-source ~/.vimrc.coc
+source ~/.vimrc.d/.vimrc.fzf
+source ~/.vimrc.d/.vimrc.lightline
+source ~/.vimrc.d/.vimrc.nerdtree
+source ~/.vimrc.d/.vimrc.coc
