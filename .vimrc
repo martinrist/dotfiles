@@ -1,21 +1,3 @@
-" Default settings that can be removed
-" Allow cursor keys in insert mode
-set esckeys
-
-" Optimize for fast terminal connections
-set ttyfast
-
-" Disable error bells
-set noerrorbells
-
-" Show the current mode
-set showmode
-
-" Start scrolling three lines before the horizontal window border
-set scrolloff=3
-
-
-" Explicit settings start here
 set background=dark
 colorscheme solarized
 set updatetime=100
@@ -54,6 +36,10 @@ set number
 syntax on
 " Highlight current line
 set cursorline
+
+" Start scrolling three lines before the horizontal window border
+set scrolloff=3
+
 " Make tabs as wide as four spaces
 set tabstop=4
 " Enable indentation without hard tabs
