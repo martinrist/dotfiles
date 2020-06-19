@@ -96,7 +96,7 @@ set mouse=a
 "set ruler
 
 " Don’t show the intro message when starting Vim
-set shortmess=atI
+set shortmess=I
 
 " Show the filename in the window titlebar
 set title
