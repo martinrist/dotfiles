@@ -54,6 +54,9 @@ set list
 " Highlight searches
 set hlsearch
 
+" Use <C-l> to mute search highlighting
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
 " Ignore case of searches
 set ignorecase
 

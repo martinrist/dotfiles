@@ -12,7 +12,7 @@ A list of some of the things to be done in these dotfiles:
 
 - [x] Remove default settings from existing [.vimrc](.vimrc) file
 - [x] Move per module `.vimrc.*` files into `.vimrc.d` directory
-- [ ] Implement 'Practical Vim' Tip 81 (<Ctrl+L> to mute highlighting)
+- [x] Implement 'Practical Vim' Tip 81 (<Ctrl+L> to mute highlighting)
 - [x] Review Chris Martin's [`.vimrc'
 file](https://github.com/chris-martin/home/blob/master/.vimrc)
 
