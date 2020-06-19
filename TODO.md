@@ -15,6 +15,12 @@ A list of some of the things to be done in these dotfiles:
 - [x] Implement 'Practical Vim' Tip 81 (<Ctrl+L> to mute highlighting)
 - [x] Review Chris Martin's [`.vimrc'
 file](https://github.com/chris-martin/home/blob/master/.vimrc)
+- [ ] Review remaining 'TODO" entries in [.vimrc](.vimrc)
+
+
+## tmux
+
+- [ ] Review current [.tmux.conf](.tmux.conf) file
 
 
 ## Haskell Development
