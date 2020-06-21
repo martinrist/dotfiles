@@ -100,6 +100,26 @@ set undodir=~/.vim/undo
 
 
 
+" ------
+" Search
+" ------
+
+" Highlight searches
+set hlsearch
+
+" Use <C-l> to mute search highlighting
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
+
+" Ignore case of searches
+set ignorecase
+
+" Highlight dynamically as pattern is typed
+set incsearch
+
+
+
+
+
 " Don’t add empty newlines at the end of files
 " TODO: Investigate whether this is useful
 set binary
@@ -118,18 +138,6 @@ set softtabstop=4
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,nbsp:_
 set list
-
-" Highlight searches
-set hlsearch
-
-" Use <C-l> to mute search highlighting
-nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
-
-" Ignore case of searches
-set ignorecase
-
-" Highlight dynamically as pattern is typed
-set incsearch
 
 " Autoindent, so gqap works correctly for bulleted lists
 " TODO: Investigate whether this is useful
