@@ -51,6 +51,24 @@ set clipboard=unnamed
 
 
 
+" ----------
+" File Types
+" ----------
+
+" Enable file type detection
+" TODO: Split into separate `filetype on` / `filetype plugin on` and 'filetype
+" indent on` entries
+filetype plugin indent on
+
+" Set Markdown text width
+autocmd BufNewFile,BufRead *.md setlocal textwidth=80
+
+" Set indent for YAML files
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+
+
+
 
 
 " Configure leader
@@ -97,15 +115,6 @@ set incsearch
 
 " Show the (partial) command as it’s being typed
 set showcmd
-
-" Enable file type detection
-filetype plugin indent on
-
-" Set Markdown text width
-autocmd BufNewFile,BufRead *.md setlocal textwidth=80
-
-" Set indent for YAML files
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " Autoindent, so gqap works correctly for bulleted lists
 " TODO: Investigate whether this is useful
