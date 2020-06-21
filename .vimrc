@@ -89,15 +89,21 @@ set showcmd
 
 
 
-" Don’t add empty newlines at the end of files
-" TODO: Investigate whether this is useful
-set binary
-set noeol
+" ---------------
+" File Management
+" ---------------
 
 " Centralize backups, swapfiles and undo history
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
 set undodir=~/.vim/undo
+
+
+
+" Don’t add empty newlines at the end of files
+" TODO: Investigate whether this is useful
+set binary
+set noeol
 
 " Make tabs as wide as four spaces
 " TODO: Investigate whether this is useful
