@@ -17,16 +17,44 @@ endfun
 
 
 
+" ----------------
+" Editor Interface
+" ----------------
 
 " Set update time for quicker UI updates
 set updatetime=100
 
-" Configure leader
-let mapleader=","
+" Enable line numbers
+set number
+
+" Highlight current line
+set cursorline
+
+" Start scrolling three lines before the horizontal window border
+set scrolloff=3
+
+" Always show status line, even for the last / only file
+set laststatus=2
+
+" Enable mouse in all modes
+set mouse=a
+
+" Don’t show the intro message when starting Vim
+set shortmess=I
+
+" Show the filename in the window titlebar
+set title
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 " TODO: Investigate whether this is useful
 set clipboard=unnamed
+
+
+
+
+
+" Configure leader
+let mapleader=","
 
 " Enhance command-line completion
 set wildmenu
@@ -40,15 +68,6 @@ set noeol
 set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
 set undodir=~/.vim/undo
-
-" Enable line numbers
-set number
-
-" Highlight current line
-set cursorline
-
-" Start scrolling three lines before the horizontal window border
-set scrolloff=3
 
 " Make tabs as wide as four spaces
 " TODO: Investigate whether this is useful
@@ -75,18 +94,6 @@ set ignorecase
 
 " Highlight dynamically as pattern is typed
 set incsearch
-
-" Always show status line, even for the last / only file
-set laststatus=2
-
-" Enable mouse in all modes
-set mouse=a
-
-" Don’t show the intro message when starting Vim
-set shortmess=I
-
-" Show the filename in the window titlebar
-set title
 
 " Show the (partial) command as it’s being typed
 set showcmd
