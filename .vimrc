@@ -118,7 +118,9 @@ set incsearch
 
 
 
-
+" -----------------------
+" Indentation & Whitespce
+" -----------------------
 
 " Don’t add empty newlines at the end of files
 " TODO: Investigate whether this is useful
@@ -135,16 +137,19 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
-" Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,nbsp:_
-set list
-
 " Autoindent, so gqap works correctly for bulleted lists
 " TODO: Investigate whether this is useful
 set autoindent
 
+" Show “invisible” characters
+set lcs=tab:▸\ ,trail:·,nbsp:_
+set list
 
+
+
+" -----------------------------
 " Plugin-specific configuration
+" -----------------------------
 
 source ~/.vimrc.d/.vimrc.fzf
 source ~/.vimrc.d/.vimrc.lightline
