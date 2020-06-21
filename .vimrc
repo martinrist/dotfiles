@@ -1,6 +1,22 @@
+" -----------------------------------
+" Colour Schemes & Syntax Highligting
+" -----------------------------------
+
 " Set colour scheme and background
 colorscheme solarized
 set background=dark
+
+" Enable syntax highlighting
+syntax on
+
+" Find out which syntax group is used by a selection
+function! SynGroup()
+    let l:s = synID(line('.'), col('.'), 1)
+    echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
+endfun
+
+
+
 
 " Set update time for quicker UI updates
 set updatetime=100
@@ -27,9 +43,6 @@ set undodir=~/.vim/undo
 
 " Enable line numbers
 set number
-
-" Enable syntax highlighting
-syntax on
 
 " Highlight current line
 set cursorline
@@ -90,12 +103,6 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 " Autoindent, so gqap works correctly for bulleted lists
 " TODO: Investigate whether this is useful
 set autoindent
-
-" Find out which syntax group is used by a selection
-function! SynGroup()
-    let l:s = synID(line('.'), col('.'), 1)
-    echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
-endfun
 
 
 " Plugin-specific configuration
