@@ -77,13 +77,17 @@ let mapleader=","
 
 
 
-
-
-
-
+" ------------
+" Command Line
+" ------------
 
 " Enhance command-line completion
 set wildmenu
+
+" Show the (partial) command as it’s being typed
+set showcmd
+
+
 
 " Don’t add empty newlines at the end of files
 " TODO: Investigate whether this is useful
@@ -120,9 +124,6 @@ set ignorecase
 
 " Highlight dynamically as pattern is typed
 set incsearch
-
-" Show the (partial) command as it’s being typed
-set showcmd
 
 " Autoindent, so gqap works correctly for bulleted lists
 " TODO: Investigate whether this is useful
