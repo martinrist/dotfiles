@@ -27,3 +27,4 @@ file](https://github.com/chris-martin/home/blob/master/.vimrc)
 
 - [ ] Review settings from ['Vim and Haskell in
 2019'](http://marco-lopes.com/articles/Vim-and-Haskell-in-2019/)
+- [x] If there's a single completion entry, make <CR> just complete it
