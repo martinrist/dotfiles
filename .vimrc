@@ -46,7 +46,6 @@ set shortmess=I
 set title
 
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
-" TODO: Investigate whether this is useful
 set clipboard=unnamed
 
 
@@ -123,22 +122,18 @@ set incsearch
 " -----------------------
 
 " Don’t add empty newlines at the end of files
-" TODO: Investigate whether this is useful
 set binary
 set noeol
 
 " Make tabs as wide as four spaces
-" TODO: Investigate whether this is useful
 set tabstop=4
 
 " Enable indentation without hard tabs
-" TODO: Investigate whether this is useful
 set expandtab
 set shiftwidth=4
 set softtabstop=4
 
 " Autoindent, so gqap works correctly for bulleted lists
-" TODO: Investigate whether this is useful
 set autoindent
 
 " Show “invisible” characters
