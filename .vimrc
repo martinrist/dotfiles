@@ -54,10 +54,9 @@ set clipboard=unnamed
 " File Types
 " ----------
 
-" Enable file type detection
-" TODO: Split into separate `filetype on` / `filetype plugin on` and 'filetype
-" indent on` entries
-filetype plugin indent on
+" Enable file type detection & plugins
+filetype on
+filetype plugin on
 
 " Set Markdown text width
 autocmd BufNewFile,BufRead *.md setlocal textwidth=80
@@ -120,6 +119,9 @@ set incsearch
 " -----------------------
 " Indentation & Whitespce
 " -----------------------
+
+" Enable indentation
+filetype indent on
 
 " Don’t add empty newlines at the end of files
 set binary

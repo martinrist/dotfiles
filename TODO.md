@@ -15,7 +15,11 @@ A list of some of the things to be done in these dotfiles:
 - [x] Implement 'Practical Vim' Tip 81 (<Ctrl+L> to mute highlighting)
 - [x] Review Chris Martin's [`.vimrc'
 file](https://github.com/chris-martin/home/blob/master/.vimrc)
-- [ ] Review remaining 'TODO" entries in [.vimrc](.vimrc)
+- [x] Review remaining 'TODO" entries in [.vimrc](.vimrc)
+- [ ] Review settings for FZF in [.vimrc.d/.vimrc.fzf](.vimrc.d/.vimrc.fzf)
+- [ ] Review settings for lightline in [.vimrc.d/.vimrc.lightline](.vimrc.d/.vimrc.lightline)
+- [ ] Review settings for NERDTree in [.vimrc.d/.vimrc.nerdTree](.vimrc.d/.vimrc.nerdtree)
+- [ ] Investigate Git plugins
 
 
 ## tmux
@@ -25,6 +29,7 @@ file](https://github.com/chris-martin/home/blob/master/.vimrc)
 
 ## Haskell Development
 
+- [x] If there's a single completion entry, make <CR> just complete it
 - [ ] Review settings from ['Vim and Haskell in
 2019'](http://marco-lopes.com/articles/Vim-and-Haskell-in-2019/)
-- [x] If there's a single completion entry, make <CR> just complete it
+- [ ] Review settings for coc in [.vimrc.d/.vimrc.coc](.vimrc.d/.vimrc.coc)
