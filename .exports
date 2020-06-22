@@ -33,4 +33,4 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 
 
 # Silence Ruby warnings
-export RUBYOPT='W0'
+export RUBYOPT='-W0'
