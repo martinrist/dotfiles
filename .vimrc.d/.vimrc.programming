@@ -1,0 +1,5 @@
+" Always show sign column separate from line number
+set signcolumn=yes
+
+" Ensure sign column is same colour as line number
+highlight! link SignColumn LineNr

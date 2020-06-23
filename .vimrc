@@ -151,4 +151,6 @@ set list
 source ~/.vimrc.d/.vimrc.fzf
 source ~/.vimrc.d/.vimrc.lightline
 source ~/.vimrc.d/.vimrc.nerdtree
+source ~/.vimrc.d/.vimrc.programming
 source ~/.vimrc.d/.vimrc.coc
+source ~/.vimrc.d/.vimrc.gitgutter

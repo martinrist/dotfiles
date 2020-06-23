@@ -1,0 +1,2 @@
+" Use floating preview window
+let g:gitgutter_preview_win_floating=1

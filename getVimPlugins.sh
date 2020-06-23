@@ -19,6 +19,7 @@ git clone https://github.com/itchyny/lightline.vim.git
 git clone https://github.com/itchyny/vim-gitbranch.git
 
 ## Programming - General Support Plugins
+git clone https://github.com/airblade/vim-gitgutter
 
 
 ## Programming - Language-specific Plugins
