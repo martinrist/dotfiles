@@ -40,7 +40,7 @@ set laststatus=2
 set mouse=a
 
 " Don’t show the intro message when starting Vim
-set shortmess=I
+set shortmess=atI
 
 " Show the filename in the window titlebar
 set title
