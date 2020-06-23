@@ -1,5 +1,7 @@
 " Set up fzf
 set rtp+=/usr/local/opt/fzf
+
+" Configure colours
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
@@ -14,4 +16,6 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
+
+" Key mapping to open new file with fuzzy find
 nnoremap <C-p> :<C-u>FZF<CR>
