@@ -17,7 +17,7 @@ A list of some of the things to be done in these dotfiles:
 file](https://github.com/chris-martin/home/blob/master/.vimrc)
 - [x] Review remaining 'TODO" entries in [.vimrc](.vimrc)
 - [x] Review settings for FZF in [.vimrc.d/.vimrc.fzf](.vimrc.d/.vimrc.fzf)
-- [ ] Review settings for lightline in [.vimrc.d/.vimrc.lightline](.vimrc.d/.vimrc.lightline)
+- [x] Review settings for lightline in [.vimrc.d/.vimrc.lightline](.vimrc.d/.vimrc.lightline)
 - [ ] Review settings for NERDTree in [.vimrc.d/.vimrc.nerdTree](.vimrc.d/.vimrc.nerdtree)
 - [ ] Investigate Git plugins
 
