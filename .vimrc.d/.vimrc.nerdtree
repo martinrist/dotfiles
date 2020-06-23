@@ -1,3 +1,2 @@
 " Key mappings
-
 map <C-n> :NERDTreeToggle<CR>
