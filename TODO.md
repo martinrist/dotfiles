@@ -19,12 +19,19 @@ file](https://github.com/chris-martin/home/blob/master/.vimrc)
 - [x] Review settings for FZF in [.vimrc.d/.vimrc.fzf](.vimrc.d/.vimrc.fzf)
 - [x] Review settings for lightline in [.vimrc.d/.vimrc.lightline](.vimrc.d/.vimrc.lightline)
 - [x] Review settings for NERDTree in [.vimrc.d/.vimrc.nerdTree](.vimrc.d/.vimrc.nerdtree)
-- [ ] Investigate Git plugins
 
 
 ## tmux
 
 - [ ] Review current [.tmux.conf](.tmux.conf) file
+
+
+## General Development
+
+- [ ] Investigate [`vim-gitgutter`](https://github.com/airblade/vim-gitgutter.git)
+- [ ] Investigate [`vim-fugitive`](https://github.com/tpope/vim-fugitive)
+- [ ] Investigate [`vim-commentary`](https://github.com/tpope/vim-commentary)
+- [ ] Investigate [`vim-surround`](https://github.com/tpope/vim-surround)
 
 
 ## Haskell Development
