@@ -30,7 +30,7 @@ file](https://github.com/chris-martin/home/blob/master/.vimrc)
 
 - [x] Investigate [`vim-gitgutter`](https://github.com/airblade/vim-gitgutter.git)
 - [ ] Investigate [`vim-fugitive`](https://github.com/tpope/vim-fugitive)
-- [ ] Investigate [`vim-commentary`](https://github.com/tpope/vim-commentary)
+- [x] Investigate [`vim-commentary`](https://github.com/tpope/vim-commentary)
 - [ ] Investigate [`vim-surround`](https://github.com/tpope/vim-surround)
 
 

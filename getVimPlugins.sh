@@ -20,7 +20,7 @@ git clone https://github.com/itchyny/vim-gitbranch.git
 
 ## Programming - General Support Plugins
 git clone https://github.com/airblade/vim-gitgutter
-
+git clone https://github.com/tpope/vim-commentary.git
 
 ## Programming - Language-specific Plugins
 
