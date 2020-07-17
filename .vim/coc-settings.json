@@ -2,6 +2,7 @@
 "diagnostic.maxWindowHeight": 20,
 "languageserver": {
   "haskell": {
+    // "command": "haskell-language-server-wrapper",
     "command": "hie-wrapper",
     "args": ["--lsp"],
     "rootPatterns": [
