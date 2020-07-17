@@ -5,6 +5,7 @@
     // "command": "haskell-language-server-wrapper",
     "command": "hie-wrapper",
     "args": ["--lsp"],
+    "trace.server": "verbose",
     "rootPatterns": [
       "*.cabal",
       "stack.yaml",
