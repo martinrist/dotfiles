@@ -27,6 +27,8 @@ git clone https://github.com/tpope/vim-commentary.git
 ### Haskell
 git clone --branch v0.0.78 https://github.com/neoclide/coc.nvim.git
 
+### Elm
+git clone https://github.com/andys8/vim-elm-syntax.git
 
 # Clean up
 popd
