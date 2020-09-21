@@ -10,7 +10,7 @@
     }
   },
   "haskell": {
-    "command": "hie-wrapper",
+    "command": "haskell-language-server-wrapper",
     "args": ["--lsp"],
     "trace.server": "verbose",
     "rootPatterns": [
@@ -25,14 +25,15 @@
       "haskell"
     ],
     "initializationOptions": {
-      "languageServerHaskell": {
+      "haskell": {
       }
     },
     "settings": {
-      "languageServerHaskell": {
+      "haskell": {
         "hlintOn": true,
         "maxNumberOfProblems": 10,
-        "completionSnippetsOn": true
+        "completionSnippetsOn": true,
+        "formattingProvider": "fourmolu"
       }
     }
   }
