@@ -1,6 +1,7 @@
 {
 "diagnostic.maxWindowHeight": 20,
 "diagnostic.virtualText": true,
+"diagnostic.virtualTextCurrentLineOnly": false,
 "codeLens.enable": true,
 "languageserver": {
   "elmLS": {

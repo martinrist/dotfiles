@@ -25,7 +25,8 @@ git clone https://github.com/tpope/vim-commentary.git
 ## Programming - Language-specific Plugins
 
 ### Haskell
-git clone --branch v0.0.78 https://github.com/neoclide/coc.nvim.git
+git clone --branch release https://github.com/neoclide/coc.nvim.git
+git clone --branch release https://github.com/antoinemadec/coc-fzf.git
 
 ### Elm
 git clone https://github.com/andys8/vim-elm-syntax.git
