@@ -167,3 +167,9 @@ alias reload="exec $SHELL -l"
 
 # Give pandoc more sensible default margins for PDFs
 alias pandoc="pandoc -V geometry:margin=1in"
+
+# Use nvim in place of vim if installed
+if which nvim > /dev/null 2>&1; then
+    alias vim=nvim
+    alias vi=nvim
+fi
