@@ -4,13 +4,6 @@ name: mowa
 root: ~/doc/devel/mowa
 
 windows:
-    - knowledgebase:
-        layout: main-horizontal
-        root: ~/doc/knowledgebase
-        panes:
-            - vim Home.md
-            - grip -b
-            - #empty
     - mowa-src:
         layout: main-horizontal
         root: ~/doc/devel/mowa
@@ -22,13 +15,9 @@ windows:
         root: ~/doc/devel/mowa/met-office-weather-app-ui-tests
         panes:
             - #empty
-            - calabash-ios console
-    - mowa-backend:
-        root: ~/doc/devel/mowa/met-office-weather-app-ui-tests
-        panes:
-            - ./run_scripts/backend_run
+            - #empty
     - projects:
-        root: ~/oneDrive/projects/mowa
+        root: ~/doc/work/mowa
     - scratch:
         layout: main-vertical
         panes:
