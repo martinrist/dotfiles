@@ -4,6 +4,10 @@ name: mowa
 root: ~/doc/devel/mowa
 
 windows:
+    - scratch:
+        layout: main-vertical
+        panes:
+            - #empty
     - mowa-src:
         layout: main-horizontal
         root: ~/doc/devel/mowa
@@ -18,7 +22,3 @@ windows:
             - #empty
     - projects:
         root: ~/doc/work/mowa
-    - scratch:
-        layout: main-vertical
-        panes:
-            - #empty
