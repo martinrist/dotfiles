@@ -40,3 +40,5 @@ file](https://github.com/chris-martin/home/blob/master/.vimrc)
 - [ ] Review settings from ['Vim and Haskell in
 2019'](http://marco-lopes.com/articles/Vim-and-Haskell-in-2019/)
 - [ ] Review settings for coc in [.vimrc.d/.vimrc.coc](.vimrc.d/.vimrc.coc)
+
+Test
