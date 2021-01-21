@@ -154,3 +154,4 @@ source ~/.vimrc.d/.vimrc.nerdtree
 source ~/.vimrc.d/.vimrc.programming
 source ~/.vimrc.d/.vimrc.coc
 source ~/.vimrc.d/.vimrc.gitgutter
+source ~/.vimrc.d/.vimrc.vimwiki
