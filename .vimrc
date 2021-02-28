@@ -142,6 +142,9 @@ set autoindent
 set lcs=tab:▸\ ,trail:·,nbsp:_
 set list
 
+" Strip trailing whitespace on save
+autocmd BufWritePre * :%s/\s\+$//e
+
 
 
 " -----------------------------
