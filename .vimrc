@@ -143,7 +143,17 @@ set lcs=tab:▸\ ,trail:·,nbsp:_
 set list
 
 " Strip trailing whitespace on save
-autocmd BufWritePre * :%s/\s\+$//e
+function! <SID>StripTrailingWhitespaces()
+    " save last search & cursor position
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    let @/=_s
+    call cursor(l, c)
+endfunction
+
+autocmd BufWritePre * call <SID>StripTrailingWhitespaces()
 
 
 
