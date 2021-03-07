@@ -18,11 +18,7 @@
     ],
     "cucumberautocomplete.syncfeatures": "test/features/*feature",
     "cucumberautocomplete.strictGherkinCompletion": true,
-    "ruby.codeCompletion": "rcodetools",
-    "ruby.intellisense": "rubyLocate",
     "editor.minimap.scale": 2,
     "editor.minimap.showSlider": "always",
-    "aws.profile": "default",
-    "aws.samcli.location": "/usr/local/bin/sam",
     "python.linting.pylintUseMinimalCheckers": false
 }
