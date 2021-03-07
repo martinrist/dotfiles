@@ -1,12 +1,20 @@
-alanz.vscode-hie-server
-alexkrechik.cucumberautocomplete
-amazonwebservices.aws-toolkit-vscode
-jcanero.hoogle-vscode
-justusadam.language-haskell
+# General IDE
 maptz.camelcasenavigation
-ms-python.python
-ndmitchell.haskell-ghcid
-rebornix.ruby
 rokoroku.vscode-theme-darcula
-wingrunr21.vscode-ruby
+
+# Haskell Support
+haskell.haskell
+justusadam.language-haskell
+ndmitchell.haskell-ghcid
+
+# JSON
+mohsen1.prettify-json
+
+# Python
+ms-python.python
+
+# Cucumber
+alexkrechik.cucumberautocomplete
+
+# Markdown
 yzhang.markdown-all-in-one

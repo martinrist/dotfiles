@@ -14,7 +14,7 @@ do
 done
 
 echo
-for ext in $(cat extensions)
+for ext in $(grep -v '^$' extensions | grep -v '^#')
 do
     code --install-extension $ext
 done
