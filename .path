@@ -2,3 +2,6 @@ export PATH=/opt/firefox:$PATH:/opt/apache-maven/bin:/opt/gradle/bin:/opt/postgr
 
 # Put ghcup on path
 export PATH=~/.ghcup/bin:$PATH
+
+# Put Homebrew on PATH if in /opt/homebrew/bin
+export PATH=/opt/homebrew/bin:$PATH
