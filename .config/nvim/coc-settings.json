@@ -4,6 +4,10 @@
 "diagnostic.virtualTextCurrentLineOnly": false,
 "codeLens.enable": true,
 "languageserver": {
+  "sourcekit-lsp": {
+    "filetypes": ["swift"],
+    "command": "sourcekit-lsp",
+  },
   "elmLS": {
     "command": "elm-language-server",
     "filetypes": ["elm"],
