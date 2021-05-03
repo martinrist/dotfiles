@@ -118,6 +118,10 @@
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
 
+	# Use `git-split-diff` for diffs.  Use `npm install -g git-split-diffs` to install
+	# See: https://github.com/banga/git-split-diffs
+	pager = git-split-diffs --color | less -RFX
+
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
@@ -202,3 +206,6 @@
 
 [remote "origin"]
     prune = true
+
+[split-diffs]
+    theme-name = solarized-dark
