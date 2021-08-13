@@ -209,3 +209,6 @@
 
 [split-diffs]
     theme-name = solarized-dark
+
+[init]
+    defaultBranch = main
