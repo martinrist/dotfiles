@@ -12,6 +12,7 @@ git clone https://github.com/altercation/vim-colors-solarized.git
 
 ## File managmeent
 git clone https://github.com/scrooloose/nerdtree.git
+git clone https://github.com/junegunn/fzf.git
 git clone https://github.com/junegunn/fzf.vim.git
 
 ## Status line
