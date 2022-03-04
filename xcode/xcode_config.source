@@ -1,1 +1,1 @@
-export XCODE_USERDATA_DIR=~/Library/Developer/Xcode/UserData
+export XCODE_LIBRARY_DIR=~/Library/Developer/Xcode
