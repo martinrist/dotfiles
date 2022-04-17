@@ -1,0 +1,44 @@
+# ~/.tmuxinator/xdesign.yml
+
+name: xDesign
+root: ~/doc/devel
+
+windows:
+    - mse:
+        layout: main-vertical
+        root: ~/doc/devel/marvin-ios
+        panes:
+            - #empty
+            - #empty
+
+    - william-grant:
+        layout: main-vertical
+        root: ~/doc/devel/william-grant-ios
+        panes:
+            - #empty
+            - #empty
+
+    - boilerplate:
+        layout: main-vertical
+        root: ~/doc/devel/swift-boilerplate
+        panes:
+            - #empty
+            - #empty
+
+    - project-docs:
+        layout: main-vertical
+        root: ~/doc/work/projects
+        panes:
+            - #empty
+
+    - knowledgebase:
+        layout: main-vertical
+        root: ~/doc/devel/ios-knowledgebase
+        panes:
+            - vim wiki/README.md
+            - cd wiki; grip -b --quiet & disown; clear
+
+    - scratch:
+        layout: main-vertical
+        panes:
+            - #empty
