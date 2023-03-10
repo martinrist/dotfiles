@@ -4,23 +4,23 @@ name: xDesign
 root: ~/doc/devel
 
 windows:
-    - mse:
+    - mse-ios:
         layout: main-vertical
         root: ~/doc/devel/marvin-ios
         panes:
             - #empty
             - #empty
 
-    - william-grant:
+    - mse-android:
         layout: main-vertical
-        root: ~/doc/devel/william-grant-ios
+        root: ~/doc/devel/marvin-android
         panes:
             - #empty
             - #empty
 
-    - boilerplate:
+    - mse-backend:
         layout: main-vertical
-        root: ~/doc/devel/swift-boilerplate
+        root: ~/doc/devel/marvin-backend
         panes:
             - #empty
             - #empty
