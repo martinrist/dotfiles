@@ -33,6 +33,8 @@ export VIM_PACKAGES=~/.vim/pack/bundle/start
 # Silence Bash deprecation warning on mac OS Catalina
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-
 # Silence Ruby warnings
 export RUBYOPT='-W0'
+
+# Set up NVM
+source $(brew --prefix nvm)/nvm.sh
