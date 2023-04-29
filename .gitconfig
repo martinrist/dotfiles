@@ -167,6 +167,10 @@
 	log = true
 	tool = vimdiff
 	conflictstyle = diff3
+    autoStash = true
+
+[rebase]
+    autoStash = true
 
 
 [push]
