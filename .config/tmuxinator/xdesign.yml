@@ -11,16 +11,16 @@ windows:
             - #empty
             - #empty
 
-    - mse-android:
+    - mse-backend:
         layout: main-vertical
-        root: ~/doc/devel/marvin-android
+        root: ~/doc/devel/marvin-backend
         panes:
             - #empty
             - #empty
 
-    - mse-backend:
+    - mse-android:
         layout: main-vertical
-        root: ~/doc/devel/marvin-backend
+        root: ~/doc/devel/marvin-android
         panes:
             - #empty
             - #empty
