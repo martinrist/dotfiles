@@ -5,6 +5,7 @@
 " Set colour scheme and background
 colorscheme solarized
 set background=dark
+hi PMenu cterm=NONE
 
 " Enable syntax highlighting
 syntax on
