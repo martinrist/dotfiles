@@ -63,3 +63,10 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 
 # Install fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Add tab completion for AWS CLI
+complete -C '/opt/homebrew/bin/aws_completer' aws
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
