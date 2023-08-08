@@ -15,8 +15,9 @@ set updatetime=300
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
-" Background for document hover
+" Background for document hover and selection
 hi CocFloating ctermbg=0
+hi CocHighlightText ctermfg=13 cterm=underline
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
