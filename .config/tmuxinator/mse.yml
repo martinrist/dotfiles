@@ -1,6 +1,6 @@
-# ~/.tmuxinator/xdesign.yml
+# ~/.tmuxinator/mse.yml
 
-name: xDesign
+name: MSE
 root: ~/doc/devel
 
 windows:

@@ -1,0 +1,30 @@
+# ~/.tmuxinator/dataCapture.yml
+
+name: Data Capture
+root: ~/doc/devel
+
+windows:
+    - backend:
+        layout: main-vertical
+        root: ~/doc/devel/data-capture-backend
+        panes:
+            - #empty
+            - #empty
+
+    - project-docs:
+        layout: main-vertical
+        root: ~/doc/work/projects
+        panes:
+            - #empty
+
+    - knowledgebase:
+        layout: main-vertical
+        root: ~/doc/devel/java-knowledgebase
+        panes:
+            - vim wiki/README.md
+            - cd wiki; grip -b --quiet & disown; clear
+
+    - scratch:
+        layout: main-vertical
+        panes:
+            - #empty
