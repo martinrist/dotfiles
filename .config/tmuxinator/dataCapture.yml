@@ -11,6 +11,15 @@ windows:
             - #empty
             - #empty
 
+    - local-server:
+        layout: tiled
+        root: ~/doc/devel/data-capture-backend
+        panes:
+            - #empty
+            - #empty
+            - #empty
+            - #empty
+
     - project-docs:
         layout: main-vertical
         root: ~/doc/work/projects
