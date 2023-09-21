@@ -20,7 +20,7 @@ git clone https://github.com/itchyny/lightline.vim.git
 git clone https://github.com/itchyny/vim-gitbranch.git
 
 ## Wiki
-git clone --branch v2.5 https://github.com/vimwiki/vimwiki.git
+git clone https://github.com/vimwiki/vimwiki.git
 
 ## Programming - General Support Plugins
 git clone https://github.com/airblade/vim-gitgutter
