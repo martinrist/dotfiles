@@ -35,10 +35,5 @@ git clone --branch release https://github.com/antoinemadec/coc-fzf.git
 ### Elm
 git clone https://github.com/andys8/vim-elm-syntax.git
 
-### Swift
-git clone https://github.com/apple/swift apple-swift
-cp -r ./apple-swift/utils/vim ~/.vim/pack/bundle/start/swift
-rm -rf ./apple-swift
-
 # Clean up
 popd
