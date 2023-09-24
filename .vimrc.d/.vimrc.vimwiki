@@ -4,5 +4,7 @@ let g:vimwiki_list = [{'path': '~/doc/devel/ios-knowledgebase/wiki/',
 let g:vimwiki_markdown_link_ext = 1
 
 " Unmap CR / Tab in insert mode to prevent clash with CoC autocomplete
+" Note that this breaks Vimwiki's default handling of <CR> / <Tab> when
+" editing bulleted lists, but that's a lower priority thing to fix...
 au filetype vimwiki silent! iunmap <buffer> <Tab>
 au filetype vimwiki silent! iunmap <buffer> <CR>
