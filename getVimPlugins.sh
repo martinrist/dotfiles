@@ -7,6 +7,9 @@ pushd ~/.vim/pack/bundle/start
 
 # Clone Plugins
 
+## General Editing
+git clone https://github.com/tpope/vim-surround.git
+
 ## Color schemes
 git clone https://github.com/altercation/vim-colors-solarized.git
 
