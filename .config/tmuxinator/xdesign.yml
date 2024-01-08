@@ -1,0 +1,39 @@
+# ~/.tmuxinator/adviseros.yml
+
+name: xDesign
+root: ~/doc/devel
+
+windows:
+    - dev:
+        layout: main-vertical
+        root: ~/doc/devel/
+        panes:
+            - #empty
+            - #empty
+
+    - local-server:
+        layout: tiled
+        root: ~/doc/devel
+        panes:
+            - #empty
+            - #empty
+            - #empty
+            - #empty
+
+    - project-docs:
+        layout: main-vertical
+        root: ~/doc/work/projects
+        panes:
+            - #empty
+
+    - knowledgebase:
+        layout: main-vertical
+        root: ~/doc/devel/java-knowledgebase
+        panes:
+            - vim wiki/README.md
+            - rd wiki; grip -b --quiet & disown; clear
+
+    - scratch:
+        layout: main-vertical
+        panes:
+            - #empty

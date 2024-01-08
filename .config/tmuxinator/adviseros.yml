@@ -1,0 +1,39 @@
+# ~/.tmuxinator/adviseros.yml
+
+name: abrdn AdviserOS
+root: ~/doc/devel
+
+windows:
+    - dev:
+        layout: main-vertical
+        root: ~/doc/devel/adviseros-discovery-backend/
+        panes:
+            - #empty
+            - #empty
+
+    - local-server:
+        layout: tiled
+        root: ~/doc/devel
+        panes:
+            - cd adviseros-discovery-frontend; npm start
+            - cd adviseros-discovery-backend/adviser-central; docker-compose -f support/dynamo-db.yaml up
+            - cd adviseros-discovery-backend; ./gradlew adviser-central:quarkusDev
+            - DYNAMO_ENDPOINT=http://localhost:4566 dynamodb-admin
+
+    - project-docs:
+        layout: main-vertical
+        root: ~/doc/work/projects/abrdn
+        panes:
+            - #empty
+
+    - knowledgebase:
+        layout: main-vertical
+        root: ~/doc/devel/java-knowledgebase
+        panes:
+            - vim wiki/README.md
+            - cd wiki; grip -b --quiet & disown; clear
+
+    - scratch:
+        layout: main-vertical
+        panes:
+            - #empty
