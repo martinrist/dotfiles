@@ -38,5 +38,8 @@ git clone --branch release https://github.com/antoinemadec/coc-fzf.git
 ### Elm
 git clone https://github.com/andys8/vim-elm-syntax.git
 
+# Terraform
+git clone https://github.com/hashivim/vim-terraform.git
+
 # Clean up
 popd
