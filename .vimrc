@@ -6,6 +6,7 @@
 colorscheme solarized
 set background=dark
 hi PMenu cterm=NONE
+set notermguicolors
 
 " Enable syntax highlighting
 syntax on
