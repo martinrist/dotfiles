@@ -1,4 +1,4 @@
-let g:vimwiki_list = [{'path': '~/doc/devel/ios-knowledgebase/wiki/',
+let g:vimwiki_list = [{'path': '~/doc/devel/java-knowledgebase/wiki/',
                        \ 'syntax': 'markdown', 'ext': '.md'}]
 
 let g:vimwiki_markdown_link_ext = 1
