@@ -24,3 +24,6 @@ Thumbs.db
 
 # Maven
 target
+
+# Ignore all .sdkmanrc
+.sdkmanrc
