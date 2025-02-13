@@ -1,25 +1,7 @@
-# General IDE
-maptz.camelcasenavigation
+# General IDE & Development
+editorconfig.editorconfig
 rokoroku.vscode-theme-darcula
+stevemoser.xcode-keybindings
 
-# Haskell Support
-haskell.haskell
-justusadam.language-haskell
-ndmitchell.haskell-ghcid
-
-# JSON
-mohsen1.prettify-json
-
-# Python
-ms-python.python
-
-# Cucumber
-alexkrechik.cucumberautocomplete
-
-# Markdown
-yzhang.markdown-all-in-one
-
-# Web Development
-CelianRiboulet.webvalidator
-ecmel.vscode-html-css
-ritwickdey.LiveServer
+# Angular
+angular.ng-template
