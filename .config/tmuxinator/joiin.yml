@@ -1,0 +1,36 @@
+# ~/.config/tmuxinator/joiin.yml
+
+name: joiin
+root: ~/doc/devel/joiin-workspace
+
+windows:
+    - code:
+        layout: main-vertical
+        root: ~/doc/devel/joiin-workspace/joiin
+        panes:
+            - #empty
+            - #empty
+
+    - playwright:
+        layout: main-vertical
+        root: ~/doc/devel/joiin-workspace/jn-ui-playwright
+        panes:
+            - #empty
+            - #empty
+
+    - dev-server:
+        layout: main-vertical
+        root: ~/doc/devel/joiin-workspace/joiin
+        panes:
+            - npm run start-ui
+
+    - knowledgebase:
+        layout: main-vertical
+        root: ~/doc/devel/typescript-knowledgebase
+        panes:
+            - vim wiki/README.md
+
+    - scratch:
+        layout: main-vertical
+        panes:
+            - #empty
