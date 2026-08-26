@@ -34,6 +34,16 @@ if [ "$(uname)" == "Darwin" ]; then
     fi;
 fi;
 
+# Add tab completion for packages installed by homebrew
+if [ "$(uname)" == "Darwin" ]; then
+    if which brew > /dev/null && [ -d "$(brew --prefix)/etc/bash_completion.d" ]; then
+        for f in $(brew --prefix)/etc/bash_completion.d/*; do
+            . $f
+        done
+    fi;
+fi;
+
+
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
 	complete -o default -o nospace -F _git g;
@@ -54,6 +64,7 @@ if [ -d ~/.completion.d ]; then
     done
 fi
 
+
 # Add tab completion for `defaults read|write NSGlobalDomain`
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults;
@@ -72,7 +83,6 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
