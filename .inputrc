@@ -48,4 +48,6 @@ $if mode=vi
     set keymap vi-insert
     "\C-l": clear-screen
     "\C-k": kill-line
+    # Treat Shift+Space (CSI u from tmux extended-keys) as a regular space
+    "\e[32;2u": " "
 $endif
