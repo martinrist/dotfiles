@@ -18,10 +18,12 @@ alias h="history"
 alias j="jobs"
 
 # More Git Shortcuts
+alias gls="git ls"
 alias gs="git status"
 alias ga="git fza"
 alias gc="git commit -v"
 alias gd="git diff"
+alias gf="git fetch"
 alias gdw="git diff --word-diff"
 alias gds="git diff --staged"
 alias gp="git push"
